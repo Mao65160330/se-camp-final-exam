@@ -11,10 +11,44 @@
         <form class="form-horizontal" action="{{ url('/') }}" method="post">
             @csrf
             <div class="card-body">
+                <!--65160330 ทินภัทร เพิ่มคำนำหน้าชื่อ-->
                 <div class="form-group row">
-                    <label for="input01" class="col-sm-2 col-form-label">Example Input</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="input01">
+                    <label for="title" class="col-sm-2 col-form-label">Title</label>
+                    <div class="col-md-10">
+                        <select id="title" class="form-control name="title>
+                            <option value="">--เลือก--</option>
+                            <option value="1">นาย </option>
+                            <option value="2">นาง </option>
+                            <option value="3">นางสาว </option>
+                        </select>
+                    </div>
+                </div>
+                <!--65160330 ทินภัทร เพิ่มข้อมูลชื่อ-->
+                <div class="form-group row">
+                    <label for="name" class="col-md-2 col-form-label">Name</label>
+                    <div class="col-md-10">
+                        <input id="name" type="text" class="form-control">
+                    </div>
+                </div>
+                <!--65160330 ทินภัทร เพิ่มข้อมูล Email-->
+                <div class="form-group row">
+                    <label for="email" class="col-md-2 col-form-label">Email</label>
+                    <div class="col-md-10">
+                        <input id="email" type="email" class="form-control">
+                    </div>
+                </div>
+                <!--65160330 ทินภัทร เพิ่มข้อมูล Password-->
+                <div class="form-group row">
+                    <label for="password" class="col-md-2 col-form-label ">Password</label>
+                    <div class="col-md-10">
+                        <input id="password" type="password" class="form-control ">
+                    </div>
+                </div>
+                <!--65160330 ทินภัทร เพิ่มข้อมูล Avatar-->
+                <div class="form-group row">
+                    <label for="avatar" class="col-md-2 col-form-label">Avatar</label>
+                    <div class="col-md-10">
+                        <input id="avatar" type="file" class="form-control">
                     </div>
                 </div>
             </div>
